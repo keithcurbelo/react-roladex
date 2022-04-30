@@ -12,11 +12,13 @@ class App extends Component {
 		this.state = {
 			monsters: [],
 		};
+		console.log('constructor');
 	}
 	/** Runs third, after render()
 	 * First time component is mounted to DOM.
 	 */
 	componentDidMount() {
+		console.log('componentDidMount');
 		fetch('https://jsonplaceholder.typicode.com/users')
 			.then((resp) => resp.json())
 			.then((users) => this.setState(() => ({ monsters: users }))); //executes re-render and calls render() method again
@@ -27,6 +29,7 @@ class App extends Component {
 	 * Gets called every time a render/re-render needs to occur
 	 */
 	render() {
+		console.log('render');
 		return (
 			<div className='App'>
 				{this.state.monsters.map((monster, i) => {
