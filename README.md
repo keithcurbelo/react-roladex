@@ -3,6 +3,8 @@
 This is a simple react project used to examine react's render lifecycle.
 The app itself makes a request and renders a list of cards that can be filtered by user input.
 
+![Screenshot](src/images/app_screenshot.png)
+
 ### APIs
 - [JSONplaceholder Users](https://jsonplaceholder.typicode.com/users)
 - [RoboHash Images](https://robohash.org/)
